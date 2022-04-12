@@ -1,1 +1,120 @@
-<h1>
+<div class="hero-container container">
+  <h1>Culture <span style="color: white">Built</span> My Brand</h1>
+  <h4>The secret to winning more customers through company culture.</h4>
+
+  <button class="amazon-button"><img src="assets/culture-built-my-brand/amazon.svg">Buy Now</button>
+
+  <img
+    class="book-image-1"
+    src="assets/culture-built-my-brand/hero-image.png"
+    [ngStyle]="{'top':-imageOffsetY+'px','left':-imageOffsetX+'px'}"
+  >
+</div>
+
+<div class="description-container">
+  <div class="container">
+    <h3>Unleash the power of your culture. Propel your brand forward.</h3>
+    <p>
+      Too many executive leaders settle for inadequate employee performance,
+      mediocre outcomes, and unremarkable earnings. But this doesn't have to be your organization's reality.
+      There is a way to break through the inertia to engage your team, drive better results,
+      and attract a tribe of loyal customers—by tapping into the greatest driver of brand success: your internal company culture.
+    </p>
+    <p>
+      Culture Built My Brand is your roadmap to winning more customers and turning them into raving fans.
+      With practical steps and customizable tools, this easy-to-follow guide gives you the know-how you
+      need to tap into your company culture to create an authentic brand that stands out from the competition.
+    </p>
+  </div>
+
+</div>
+
+<div class="author-container">
+  <div class="container">
+    <img
+      class="book-image-2"
+      src="assets/culture-built-my-brand/scroll-image.png"
+      [ngStyle]="{'transform': 'rotate('+imageRotation+'deg)'}"
+    >
+    <h3>About the Authors</h3>
+    <p>
+      Mark Miller & Ted Vaughn are the cofounders of Historic Agency, a brand strategy, innovation,
+      and design partner that helps ambitious brands do more good.
+    </p>
+    <div class="author-image"></div>
+    <p>
+      Mark leads product strategy, marketing transformation, and brand at Historic.
+      He's rebranded nearly 100 organizations and also specializes in all things strategy including brand,
+      product, and marketing.
+    </p>
+    <p>
+      A fan of Bob Ross as a kid, Mark grew up wanting to be a painter. Falling short of happy clouds,
+      he thought becoming a cartoonist might be a fit, but went on to pursue film instead.
+      He started out as a producer and director creating branded content before finally landing in brand and marketing.
+    </p>
+    <div class="author-image"></div>
+    <p>
+      Ted leads client transformation at Historic and specializes in executive leadership, brand development, and strategic clarity.
+      Ted has served hundreds of for-profit and nonprofit brands. His passion is to serve senior leaders by helping them align
+      everything they do to build their brand from the inside out.
+    </p>
+    <p>Ted's childhood dream was to become a stuntman like Lee Majors in the 1980s show The Fall Guy.
+      Instead, he started his career as a professional musician and talent booker for DJs and jazz combos.
+      He also has a lifelong love affair with food and beverage and became a sommelier in 2009.</p>
+  </div>
+
+</div>
+
+<div *ngIf="reviews.length > 0" class="reviews-container">
+  <div class="container">
+    <div class="carousel-controls">
+      <div (click)="previousReview()" class="icon-container"><img src="assets/culture-built-my-brand/left-arrow.svg"></div>
+      <h4>What People Are Saying</h4>
+      <div (click)="nextReview()" class="icon-container"><img src="assets/culture-built-my-brand/right-arrow.svg"></div>
+    </div>
+    <div class="reviews">
+      <div [ngClass]="{'fadeOut': isFadingOut, 'fadeIn': isFadingIn}" class="review-container">
+        <p class="review-text">{{activeReview.content}}</p>
+        <div class="review-info-container">
+          <div class="review-author-image"></div>
+          <div class="review-infos">
+            <span>{{activeReview.authorName}}</span>
+            <span>{{activeReview.authorPosition}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="link-container">
+  <div class="container">
+    <div class="free-chapter-container">
+      <div>
+        <h2>Get Your Free Chapter</h2>
+        <p>Get Your Free Chapter
+          Download a chapter for a peek into Culture Built My Brand and start winning more customers.
+        </p>
+      </div>
+
+      <input placeholder="First Name">
+      <input placeholder="Last Name">
+      <input placeholder="Email">
+
+      <button>Submit</button>
+    </div>
+
+    <h1>Historic</h1>
+    <div class="links">
+      <div class="icon-container"><img src="assets/culture-built-my-brand/instagram.svg"></div>
+      <div class="icon-container"><img src="assets/culture-built-my-brand/facebook.svg"></div>
+      <div class="icon-container"><img src="assets/culture-built-my-brand/dribble.svg"></div>
+      <div class="icon-container"><img src="assets/culture-built-my-brand/twitter.svg"></div>
+      <div class="icon-container"><img src="assets/culture-built-my-brand/linkedin.svg"></div>
+    </div>
+  </div>
+
+
+</div>
+
