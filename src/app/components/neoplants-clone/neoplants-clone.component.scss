@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+
+  img{
+    height: 2rem;
+  }
+
+  button{
+    color: white;
+    background: #00C9AD;
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+}
+
+.slogan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 250px;
+  line-height: 230px;
+  font-weight: bold;
+
+  .line-container{
+    display: block;
+    overflow: hidden;
+  }
+  .line{
+    display: inline-block;
+    position: relative;
+    animation-delay: 0s;
+    animation-name: fadeInText;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    top: 300px;
+  }
+
+}
+.line-container:nth-child(1){
+  .line{
+    animation-delay: 0s;
+  }
+}
+.line-container:nth-child(2){
+  .line{
+    animation-delay: .2s;
+  }
+}
+.line-container:nth-child(3){
+  .line{
+    animation-delay: .4s;
+  }
+}
+.line-container:nth-child(4){
+  .line{
+    animation-delay: .6s;
+  }
+}
+
+
+@keyframes  fadeInText{
+  from{
+    top: 300px;
+  }
+  to{
+    top: 0;
+  }
+}
