@@ -18,6 +18,7 @@ $white: white;
   align-items: center;
   margin: 0 auto;
   width: 90%;
+  max-width: 1000px;
   gap: 2rem;
 }
 
@@ -89,6 +90,7 @@ p{
     position: relative;
     z-index: -1;
     width: 90%;
+    max-width: 600px;
   }
 }
 
@@ -104,7 +106,27 @@ p{
   position: relative;
   padding: 10rem 0 3rem 0;
 
-  h3{
+  .container{
+    max-width: 1200px;
+
+  }
+  .authors{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+  }
+  .author-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  @media screen and(min-width: 800px) {
+    .authors{
+      flex-direction: row;
+    }
 
   }
 
@@ -126,10 +148,10 @@ p{
     background-size: cover;
   }
 
-  .author-image:first-of-type{
+  .author-image1{
     background-image: url("../../../assets/culture-built-my-brand/author1.png");
   }
-  .author-image:last-of-type{
+  .author-image2{
     background-image: url("../../../assets/culture-built-my-brand/author2.png");
   }
 }
@@ -153,6 +175,7 @@ p{
 
 
     .review-container{
+      max-width: 600px;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -256,6 +279,7 @@ p{
 }
 
 .free-chapter-container{
+  max-width: 600px;
   position: relative;
   display: flex;
   flex-direction: column;
