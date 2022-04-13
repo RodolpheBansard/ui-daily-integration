@@ -6,7 +6,6 @@ import {NeoplantsCloneComponent} from "./components/neoplants-clone/neoplants-cl
 const routes: Routes = [
   {path:'culture-built-my-brand', component: CultureBuiltMyBrandComponent},
   {path:'neoplants', component: NeoplantsCloneComponent},
-  {path:'**', redirectTo:'neoplants'}
 ];
 
 @NgModule({

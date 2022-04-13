@@ -1,1 +1,8 @@
+<div>
+  <button (click)="goToApp(route)" *ngFor="let route of routes">
+    {{route.path}}
+  </button>
+</div>
+
+
 <router-outlet></router-outlet>
