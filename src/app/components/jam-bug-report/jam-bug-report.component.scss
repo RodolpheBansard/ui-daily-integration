@@ -1,0 +1,55 @@
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: "poppins", sans-serif;
+  }
+
+  .flow-container{
+    position: relative;
+    display: inline-flex;
+  }
+
+  .f-letter{
+    transform: rotate(15deg) translateY(10px) translateX(5px);
+  }
+  .l-letter{
+    transform: rotate(5deg) translateY(30px) translateX(5px);
+  }
+  .o-letter{
+    transform: rotate(15deg) translateY(50px) translateX(10px);
+  }
+  .w-letter{
+    transform: rotate(-10deg) translateY(40px) translateX(-15px);
+  }
+  .dot-letter{
+    transform: rotate(-15deg) translateY(30px) translateX(-25px);
+  }
+  .pls-fix-image{
+    position: absolute;
+    top: 120px;
+    left: -15px;
+  }
+  .arrows-image{
+    position: absolute;
+    top: -60px;
+  }
+}
+
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
