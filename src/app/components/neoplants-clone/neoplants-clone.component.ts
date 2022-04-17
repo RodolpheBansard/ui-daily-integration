@@ -10,7 +10,7 @@ export class NeoplantsCloneComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    document.body.style.background = "#ebebeb";
+    document.body.style.background = "#262626";
   }
 
 }
