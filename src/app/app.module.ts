@@ -7,6 +7,7 @@ import { CultureBuiltMyBrandComponent } from './components/culture-built-my-bran
 import { NeoplantsCloneComponent } from './components/neoplants-clone/neoplants-clone.component';
 import { ParallaxDirective } from './components/neoplants-clone/parallax.directive';
 import { JamBugReportComponent } from './components/jam-bug-report/jam-bug-report.component';
+import { FmIntroSectionComponent } from './components/fm-intro-section/fm-intro-section.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { JamBugReportComponent } from './components/jam-bug-report/jam-bug-repor
     CultureBuiltMyBrandComponent,
     NeoplantsCloneComponent,
     ParallaxDirective,
-    JamBugReportComponent
+    JamBugReportComponent,
+    FmIntroSectionComponent
   ],
   imports: [
     BrowserModule,
